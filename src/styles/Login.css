@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Lato', sans-serif;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4d74a0, #122495);
+}
+.login-card {
+    background: #000000; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0 rgba(21, 21, 21, 0.2);
+    text-align: center;
+    width: 400px;
+    color: #FFFFFF; 
+    transition: 0.3s ease-in-out;
+}
+.login-card:hover {
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+}
+.login-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #FFFFFF; 
+}
+.user-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.user-btn {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.student-btn {
+    background-color: crimson;
+    color: #FFFFFF; 
+}
+.coordinator-btn {
+    background-color: #2ecc71; 
+    color: #FFFFFF; 
+}
+.user-btn:hover {
+    opacity: 0.8;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+.login-form input {
+    padding: 12px;
+    border: 1px solid #C4C3CA; 
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #242323;
+    color: #C4C3CA; 
+    text-align: center;
+}
+.login-form input:focus {
+    border: 1px solid crimson;
+    outline: none;
+}
+.login-submit-btn {
+    padding: 12px;
+    background-color: crimson;
+    color: #FFFFFF; 
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+.login-submit-btn:hover {
+    background-color: #FFFFFF; 
+    color: crimson;
+    box-shadow: 0px 5px 15px rgba(228, 10, 57, 0.3);
+}
+.back-option {
+    color: #C4C3CA; 
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+    font-size: 14px;
+}
+.back-option:hover {
+    color: crimson;
+}
+.back-home {
+    display: block;
+    margin-top: 20px;
+    color: #C4C3CA; 
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+.back-home:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+@media (max-width: 500px) {
+    .login-card {
+        width: 90%;
+        padding: 30px;
+    }
+    .login-form input, .user-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .login-submit-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

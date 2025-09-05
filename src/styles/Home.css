@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(241, 241, 241);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  width: 100%;
+  background: rgba(17, 124, 143, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.header-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+
+.navbar {
+  display: flex;
+  gap: 25px;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+.login-btn {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #fff, #ddd);
+  color: rgb(17, 124, 143);
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.2);
+}
+.login-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+
+.page-content {
+  flex-grow: 1;
+  margin-top: 90px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Achievements Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.achievement-card1 {
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid crimson;
+  border-radius: 5px;
+}
+
+.achievement-card {
+  background: linear-gradient(to bottom right, #ffffff, #e3f2fd);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  min-height: 300px;
+}
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.achievement-card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0d6efd;
+}
+.achievement-card p {
+  font-size: 15px;
+  color: #444;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Card Buttons */
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: auto;
+}
+.verified-btn,
+.view-btn {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+}
+.verified-btn {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+}
+.verified-btn:hover {
+  background: #1e8449;
+  transform: scale(1.05);
+}
+.view-btn {
+  background: linear-gradient(to right, #35575c, #155965);
+  color: white;
+}
+.view-btn:hover {
+  background: #042d2d;
+  transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer {
+  background: rgb(17, 124, 143);
+  color: white;
+  padding: 50px 20px 0; /* Removed extra padding at the bottom */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+/* Logo & About */
+.footer-logo img {
+  width: 120px; /* Adjust size */
+  height: 120px; /* Make it equal to width for a perfect circle */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image fills the circle */
+  margin-bottom: 15px;
+  border: 3px solid white; /* Optional: Adds a white border for better visibility */
+}
+
+
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-link {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  color: #ddd;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+  color: #ddd;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  width: 100vw; /* Full viewport width */
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
+  text-align: center;
+  margin: 0; /* Remove unnecessary margins */
+}
+
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+/* Enhanced Introduction Section */
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 100%; /* Full width */
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Left Side - Text Content */
+.intro-text {
+  flex: 1.5; /* Increased width */
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.6;
+  color: black; /* Default text color */
+  max-width: 1100px; /* Restricting text width for better readability */
+  padding: 0 20px; /* Add spacing on sides */
+}
+
+/* Heading */
+.intro-text h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #007bff; /* Header blue */
+}
+
+/* Right Side - Illustration */
+.intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .intro-text {
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+/* FAQ Section */
+.faq-section {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px 0;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+/* Help & Support Section */
+.help-section {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.help-title {
+  font-size: 28px;
+}
+
+.contact-options {
+  margin-top: 10px;
+}
+.faq-answer {
+  display: block;  
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}

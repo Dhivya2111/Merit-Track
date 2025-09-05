@@ -1,0 +1,44 @@
+.details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .details-container h1 {
+    font-size: 28px;
+    color: rgb(17, 124, 143);
+    margin-bottom: 20px;
+  }
+  .details-container p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  .download-btn {
+    display: inline-block;
+    background-color: rgb(17, 124, 143);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .download-btn:hover {
+    background-color: rgb(12, 100, 115);
+  }
+  .back-btn {
+    display: block;
+    margin-top: 20px;
+    color: rgb(17, 124, 143);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .back-btn:hover {
+    text-decoration: underline;
+  }
+  

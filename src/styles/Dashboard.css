@@ -1,0 +1,181 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 260px;
+    background: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; 
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 12px; 
+    font-size: 18px; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.sidebar ul li:hover {
+    background: crimson;
+}
+.dashboard-content {
+    flex: 1;
+    padding: 30px;
+    background: #f4f4f4;
+}
+.dashboard-content h2 {
+    margin-bottom: 20px;
+}
+.upload-form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+.upload-form h3 {
+    margin-bottom: 15px;
+}
+.upload-form input, .upload-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.upload-form textarea {
+    height: 80px;
+}
+.upload-form input[type="file"] {
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 10px;
+}
+.upload-form button {
+    padding: 12px 15px;
+    background: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.upload-form button:hover {
+    background: darkred;
+}
+.achievements-list {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Slightly increased width */
+    margin: 20px auto; /* Center the section */
+}
+
+.achievements-list h3 {
+    margin-bottom: 12px;
+    font-size: 18px; /* Slightly increased size */
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid crimson;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.achievement-card {
+    background: #f9f9f9;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-left: 4px solid crimson; 
+    border-radius: 6px;
+    width: 95%; 
+    min-height: 70px; 
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.achievement-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+}
+.achievement-card h4 {
+    margin: 0;
+    font-size: 15px; 
+    font-weight: 600;
+    color: #222;
+}
+.achievement-card p {
+    margin: 5px 0 0;
+    font-size: 13px; 
+    color: #555;
+    line-height: 1.3;
+}
+
+.pending {
+    color: orange;
+}
+.approved {
+    color: green;
+}
+.rejected {
+    color: red;
+}
+.approval-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.approve-btn {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.approve-btn:hover {
+    background-color: darkgreen;
+}
+.reject-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reject-btn:hover {
+    background-color: darkred;
+}
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+}
+.delete-btn:hover {
+    background-color: darkred;
+}
+.del-btn{
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+}
